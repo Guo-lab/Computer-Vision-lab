@@ -174,7 +174,7 @@ class GraphMaker:
 
 
 
-
+    # command M
     ########################## Cut Graph #######################
     #% https://www.cse.iitb.ac.in/~meghshyam/seminar/SeminarReport.pdf
     # After Creating graph, cut the graph
@@ -197,7 +197,7 @@ class GraphMaker:
         for edge in self.edges:
             g.add_edge(edge[0], edge[1], edge[2], edge[2])
 
-        # 对图片开始执行切割
+        # 对图片开始执行切割    
         #@ Returns the capacity of the minimum cut or, equivalently, the maximum flow of the graph.
         flow = g.maxflow()
         print("maximum flow is {}".format(flow))
